@@ -13,6 +13,7 @@ pipeline {
                 sh "chmod +x ./gradlew"
             }
         }
+
         stage('gradle 이 사용하는 JAVA 버전 확인') {
             steps {
                 sh './gradlew -version'
